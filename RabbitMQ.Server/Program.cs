@@ -16,6 +16,12 @@ namespace RabbitMQ.Server
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// This method is used to send the data over RabbitMQ server.
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="emailAddress"></param>
         public static void Send(string firstName, string lastName, string emailAddress)
         {
             var factory = new ConnectionFactory()
